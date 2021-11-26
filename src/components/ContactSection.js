@@ -47,6 +47,11 @@ const ContactSectionStyle = styled.div`
       padding: 4rem 2rem 2rem 2rem;
     }
   }
+  @media only screen and (max-width: 300px) {
+    .container {
+      width: auto;
+    }
+  }
 `;
 
 export default function ContactSection() {
