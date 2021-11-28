@@ -6,8 +6,8 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import Footer from './components/Footer';
-import ScrollToTop from './components/ScrollToTop';
 import SmoothScrollbar from './components/SmoothScrollbar';
+import Bts from './pages/Bts';
 
 export default function App() {
   return (
@@ -21,6 +21,9 @@ export default function App() {
             </Route>
             <Route path="/projects">
               <Projects />
+            </Route>
+            <Route path="/bts">
+              <Bts />
             </Route>
             <Route path="/contact">
               <Contact />

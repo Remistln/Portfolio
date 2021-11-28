@@ -51,8 +51,11 @@ export default function Projects() {
   useEffect(() => {
     if (searchText === '') return;
     setProjectData(() =>
-      ProjectInfo.filter((item) =>
-        item.name.toLowerCase().match(searchText.toLowerCase())
+      ProjectInfo.filter(
+        (item) =>
+          item.name.toLowerCase().match(searchText.toLowerCase()) ||
+          item.techno.toLowerCase().match(searchText.toLowerCase()) ||
+          item.type.toLowerCase().match(searchText.toLowerCase())
       )
     );
   }, [searchText]);
@@ -84,8 +87,10 @@ export default function Projects() {
             <ProjectItem
               key={item.id}
               title={item.name}
-              desc={item.description}
+              desc={item.desc}
               img={item.img}
+              type={item.type}
+              techno={item.techno}
             />
           ))}
         </div>

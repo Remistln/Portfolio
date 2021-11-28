@@ -144,7 +144,18 @@ export default function NavMenu() {
               onKeyDown={() => SetShowNav(!showNav)}
               tabIndex={0}
             >
-              Project
+              Projects
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/bts"
+              onClick={() => SetShowNav(!showNav)}
+              role="button"
+              onKeyDown={() => SetShowNav(!showNav)}
+              tabIndex={0}
+            >
+              BTS
             </NavLink>
           </li>
           <li>

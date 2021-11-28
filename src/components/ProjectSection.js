@@ -88,6 +88,8 @@ export default function ProjectSection() {
                     title={project.name}
                     img={project.img}
                     desc={project.desc}
+                    objectfit={project.contain}
+                    techno={project.techno}
                   />
                 </SwiperSlide>
               );

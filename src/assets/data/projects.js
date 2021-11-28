@@ -1,45 +1,73 @@
 import { v4 as uuidv4 } from 'uuid';
-import ProjectImg from '../images/projectImg.png';
-import UTrackerImg from '../images/utracker.jpg';
-import GreenCtgImg from '../images/greenctg.jpg';
-import CoinTrackerImg from '../images/cointracker.jpg';
-import CavinImg from '../images/cavinimg.jpg';
+import Chess from '../images/chess.jpg';
+import Battleship from '../images/battleship.jpeg';
+import VoyageR from '../images/voyager.png';
+import ValeeDesCroises from '../images/valee.jpg';
+import Sightseeing from '../images/Sightseeing.jpg';
+import API from '../images/api.png';
+import Hopital from '../images/hopital.jpg';
 
 const projects = [
   {
     id: uuidv4(),
-    name: 'U Tracker',
-    desc:
-      'An application to track your all data from one place. I developed the website and the mobile app',
-    img: UTrackerImg,
+    name: 'Chess',
+    desc: "Jeu d'échecs utilisant le terminal a 2 joueurs ou contre une IA",
+    img: Chess,
+    type: 'School project',
+    techno: 'Python',
   },
   {
     id: uuidv4(),
-    name: 'Green CTG',
+    name: 'Battleship',
     desc:
-      'An app to help people to get an overview of how they can make the city beautiful.',
-    img: GreenCtgImg,
+      'Jeu de bataille navale utilisant le terminal jouable a 2 ou contre une IA',
+    img: Battleship,
+    type: 'School project',
+    techno: 'Python',
   },
   {
     id: uuidv4(),
-    name: 'Coin Tracker',
+    name: 'VoyageR',
     desc:
-      'Using this app you can track any e coin. Also you will get a good advise about investment form the professional',
-    img: CoinTrackerImg,
+      "Blog de voyage au travers de la VR, 1er site web à l'occation d'un projet de début de première année,",
+    img: VoyageR,
+    contain: true,
+    type: 'School project',
+    techno: 'HTML - CSS',
   },
   {
     id: uuidv4(),
-    name: "Cavin's Portfolio",
-    desc:
-      'A portfolio for Cavin jr. A artist from New york city. The portfolio is made using ReactJs and GatsbyJs.',
-    img: CavinImg,
+    name: 'Camping Site Project',
+    desc: "Site de camping à l'occasion d'un projet de groupe",
+    img: ValeeDesCroises,
+    type: 'School project',
+    techno: 'PHP - SQL',
   },
   {
     id: uuidv4(),
-    name: 'Tracking Soft',
+    name: 'Sightseeing tours',
+    desc: 'Site de réservations de circuits touristiques',
+    img: Sightseeing,
+    type: 'School project',
+    techno: 'PHP - SQL',
+  },
+  {
+    id: uuidv4(),
+    name: 'APIEasySAV',
     desc:
-      'A tracking website that will show the performance of the website. Also you will get some useful advice to improve the performance.',
-    img: ProjectImg,
+      "API permettant de lier un service à une base de données de techniciens et d'interventions",
+    img: API,
+    type: 'School project',
+    techno: 'Python',
+  },
+  {
+    id: uuidv4(),
+    name: 'Hospital',
+    desc:
+      "Projet Symfony permettant a un infirmier de récupérer ou de modifier des informations des patients d'un hôpital",
+    img: Hopital,
+    type: 'School project',
+    techno: 'SYMFONY',
   },
 ];
 

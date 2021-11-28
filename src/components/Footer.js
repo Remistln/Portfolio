@@ -83,6 +83,11 @@ export default function Footer() {
                 type: 'Link',
               },
               {
+                title: 'BTS',
+                path: '/bts',
+                type: 'Link',
+              },
+              {
                 title: 'Contact',
                 path: '/contact',
                 type: 'Link',
