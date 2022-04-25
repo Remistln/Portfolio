@@ -9,7 +9,7 @@ import ScrollDownArrow from '../assets/images/scroll-down-arrow.svg';
 const HeroStyles = styled.div`
   .hero {
     height: 100vh;
-    min-height: 1000px;
+    min-height: 900px;
     width: 100%;
     text-align: center;
     display: flex;
@@ -41,56 +41,7 @@ const HeroStyles = styled.div`
   .hero__info {
     margin-top: -18rem;
   }
-  .hero__social,
-  .hero__scrollDown {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    position: absolute;
-    bottom: 20px;
-    width: 50px;
-  }
-  .hero__social {
-    left: 50px;
-  }
-  .hero__scrollDown {
-    right: 50px;
-  }
-  .hero__social__indicator,
-  .hero__scrollDown {
-    width: 50px;
-    p {
-      font-size: 1.6rem;
-      transform: translateY(-70px) rotate(90deg);
-      letter-spacing: 0.7rem;
-      text-transform: uppercase;
-    }
-    img {
-      max-height: 45px;
-      width: 16px;
-      margin: 0 auto;
-      object-fit: contain;
-    }
-  }
-  .hero__scrollDown {
-    img {
-      max-height: 70px;
-    }
-  }
-  .hero__social__text {
-    ul {
-      li {
-        margin-bottom: 1rem;
-      }
-      a {
-        display: inline-block;
-        font-size: 1.6rem;
-        transform: rotate(-90deg);
-        letter-spacing: 5px;
-        margin-bottom: 2px;
-      }
-    }
-  }
+
   @media only screen and (max-width: 768px) {
     .hero {
       min-height: 750px;
@@ -108,38 +59,6 @@ const HeroStyles = styled.div`
     .hero__info {
       margin-top: 3rem;
     }
-    .hero__social {
-      left: 0px;
-      bottom: 1rem;
-      width: 20px;
-      .hero__social__indicator {
-        width: 20px;
-        p {
-          font-size: 1.2rem;
-        }
-        img {
-          max-height: 22px;
-        }
-      }
-      .hero__social__text {
-        ul {
-          li {
-            a {
-              font-size: 1.3rem;
-              margin-bottom: 1rem;
-            }
-          }
-        }
-      }
-    }
-    .hero__scrollDown {
-      right: 0;
-      width: 20px;
-      gap: 1rem;
-      p {
-        font-size: 1.3rem;
-      }
-    }
   }
 `;
 
@@ -149,33 +68,14 @@ export default function HeroSection() {
       <div className="hero">
         <div className="container">
           <h1 className="hero__heading">
-            <span>Hello this is </span>
+            <span>Bonjour je suis</span>
             <span className="hero__name">Remi Staelen</span>
           </h1>
           <div className="hero__img">
             <img src={HeroImg} alt="" />
           </div>
           <div className="hero__info">
-            <Button btnLink="/projects" btnText="See my work" />
-          </div>
-          <div className="hero__social">
-            <div className="hero__social__indicator">
-              <p>Follow</p>
-              <img src={SocialMediaArrow} alt="social media arrow" />
-            </div>
-            <div className="hero__social__text">
-              <ul>
-                <li>
-                  <a href="#" target="_blank" rel="noreffer">
-                    LI
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="hero__scrollDown">
-            <p>Scroll</p>
-            <img src={ScrollDownArrow} alt="scroll down arrow" />
+            <Button btnLink="/projects" btnText="Mes projets" />
           </div>
         </div>
       </div>

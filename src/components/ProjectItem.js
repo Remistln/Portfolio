@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import projectImg from '../assets/images/projectImg.png';
-import BtsSkills from './BtsSkills';
 import ProjectInfo from '../assets/data/projects';
 
 const ProjectItemStyle = styled.div`
@@ -53,10 +52,11 @@ export default function ProjectItem({
   desc = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
   type = 'none',
   techno = 'none',
+  link = 'none',
 }) {
   return (
     <ProjectItemStyle>
-      <Link to={`/projects/${title}`} className="projectItem__img">
+      <Link to={link} className="projectItem__img">
         <img src={img} alt="Project img" />
       </Link>
       <div className="projectItem__info">
@@ -69,7 +69,7 @@ export default function ProjectItem({
           <span>{type}</span>
         </p>
         <p className="projectItem__techno">
-          <th>Technologies :</th>
+          <th>Technologie :</th>
           <span>{techno}</span>
         </p>
       </div>

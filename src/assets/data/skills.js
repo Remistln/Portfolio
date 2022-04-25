@@ -38,7 +38,7 @@ const skills = [
       },
       {
         id: uuidv4(),
-        title: 'Gérer des sauvegardes',
+        title: 'Gérer des sauvegardes     ',
         cours: true,
         stageun: true,
         stagedeux: false,
@@ -150,6 +150,7 @@ const skills = [
         cours: true,
         stageun: false,
         stagedeux: false,
+        link: '/projects/apieasysav',
       },
       {
         id: uuidv4(),

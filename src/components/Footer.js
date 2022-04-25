@@ -4,7 +4,7 @@ import PText from './PText';
 import FooterColumn from './FooterColumn';
 
 const FooterStyle = styled.div`
-  padding-top: 10rem;
+  padding-top: 5rem;
   padding-bottom: 5rem;
   background-color: var(--deep-dark);
   .container {
@@ -13,6 +13,10 @@ const FooterStyle = styled.div`
   }
   .footer__col1 {
     flex: 2;
+    p {
+      padding-right: 5rem;
+      text-align: justify;
+    }
   }
   .footer__col2,
   .footer__col3,
@@ -56,35 +60,38 @@ export default function Footer() {
         <div className="footer__col1">
           <h1 className="footer__col1__title">Staelen Remi</h1>
           <PText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-            augue mauris, elementum eget arcu nec, ullamcorper finibus nisi.
-            Suspendisse elementum et erat sit amet dapibus. Suspendisse at
-            cursus mi, vitae blandit sem. Duis convallis malesuada tellus, vel
-            mattis velit faucibus ac.
+            Je suis un étudiant de 2ème année à l'école d'informatique EPSI, et
+            je suis passionné par la programmation depuis quelques années. Je
+            souhaite me spécialiser dans les données et l'IA dans le futur
           </PText>
         </div>
         <div className="footer__col2">
           <FooterColumn
-            heading="Important Links"
+            heading="Liens"
             links={[
               {
-                title: 'Home',
+                title: 'Acceuil',
                 path: '/',
                 type: 'Link',
               },
               {
-                title: 'About',
+                title: 'A propos',
                 path: '/about',
                 type: 'Link',
               },
               {
-                title: 'Projects',
+                title: 'Projets',
                 path: '/projects',
                 type: 'Link',
               },
               {
                 title: 'BTS',
                 path: '/bts',
+                type: 'Link',
+              },
+              {
+                title: 'Certifications',
+                path: '/certifications',
                 type: 'Link',
               },
               {
@@ -97,7 +104,7 @@ export default function Footer() {
         </div>
         <div className="footer__col3">
           <FooterColumn
-            heading="Contact Infos"
+            heading="Infos"
             links={[
               {
                 title: '+33628476589',
@@ -117,7 +124,7 @@ export default function Footer() {
         </div>
         <div className="footer__col4">
           <FooterColumn
-            heading="Social Links"
+            heading="Social"
             links={[
               {
                 title: 'Linkedin',
@@ -133,7 +140,7 @@ export default function Footer() {
       </div>
       <div className="copyright">
         <div className="container">
-          <PText>© 2021 - Ayan Khan | Designed by web cifar </PText>
+          <PText>© 2021 - Staelen Remi | Inspired by web cifar </PText>
         </div>
       </div>
     </FooterStyle>

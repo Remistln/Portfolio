@@ -122,7 +122,7 @@ export default function NavMenu() {
               onKeyDown={() => SetShowNav(!showNav)}
               tabIndex={0}
             >
-              Home
+              Acceuil
             </NavLink>
           </li>
           <li>
@@ -133,7 +133,7 @@ export default function NavMenu() {
               onKeyDown={() => SetShowNav(!showNav)}
               tabIndex={0}
             >
-              About
+              A propos
             </NavLink>
           </li>
           <li>
@@ -144,7 +144,7 @@ export default function NavMenu() {
               onKeyDown={() => SetShowNav(!showNav)}
               tabIndex={0}
             >
-              Projects
+              Projets
             </NavLink>
           </li>
           <li>
@@ -156,6 +156,28 @@ export default function NavMenu() {
               tabIndex={0}
             >
               BTS
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/stage"
+              onClick={() => SetShowNav(!showNav)}
+              role="button"
+              onKeyDown={() => SetShowNav(!showNav)}
+              tabIndex={0}
+            >
+              Stage
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/certifications"
+              onClick={() => SetShowNav(!showNav)}
+              role="button"
+              onKeyDown={() => SetShowNav(!showNav)}
+              tabIndex={0}
+            >
+              Certifications
             </NavLink>
           </li>
           <li>

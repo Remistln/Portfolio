@@ -70,14 +70,14 @@ export default function Projects() {
   return (
     <ProjectsStyle>
       <div className="container">
-        <SectionTitle heading="Projects" subheading="Some of my recent works" />
+        <SectionTitle heading="Projets" subheading="Mes récents" />
         <div className="projects__searchBar">
           <form action="">
             <input
               type="text"
               value={searchText}
               onChange={handleChange}
-              placeholder="Project name"
+              placeholder="Nom - Type - Techno"
             />
             <MdSearch className="searchIcon" />
           </form>
@@ -91,6 +91,7 @@ export default function Projects() {
               img={item.img}
               type={item.type}
               techno={item.techno}
+              link={item.link}
             />
           ))}
         </div>

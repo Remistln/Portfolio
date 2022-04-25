@@ -59,17 +59,17 @@ export default function AboutSection() {
         <div className="aboutSection">
           <SectionTitle
             className="section-title"
-            subheading="Let me introduce myself"
-            heading="About me"
+            subheading="Présentation"
+            heading="A propos de moi"
           />
 
           <PText>
-            Etudiant en 2e d'informatique à EPSI Lille. J'aime l'infini
-            potentiel que la programmation nous offre
+            Étudiant en 2ème année d'informatique à l'EPSI de Lille. J'aime le
+            potentiel infini que nous offre la programmation.
           </PText>
           <div className="aboutSection__buttons">
-            <Button btnLink="/projects" btnText="Works" />
-            <Button btnLink="/about" btnText="Read More" />
+            <Button btnLink="/projects" btnText="Projets" />
+            <Button btnLink="/about" btnText="En savoir plus" />
           </div>
         </div>
       </div>

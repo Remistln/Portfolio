@@ -4,174 +4,354 @@ import styled from 'styled-components';
 import skills from '../assets/data/skills';
 
 const BtsSectionStyles = styled.div`
-  // Style de l aversion principale
-  //.BtsTheme {
-  //  height: 700px;
-  //  width: 100%;
-  //  padding-top: 5rem;
-  //  border: 1px solid white;
-  //  .heading {
-  //    font-size: 2rem;
-  //  }
-  //  .BtsTheme__skills {
-  //    height: 100%;
-  //    width: 100%;
-  //    text-align: center;
-  //    .btsSkill {
-  //      width: 100%;
-  //      height: 100%;
-  //      border: 1px solid blue;
-  //
-  //      .BtsSkills__skill {
-  //        transform: rotate(-90deg);
-  //        border: 1px solid black;
-  //      }
-  //      .BtsSkills__cours,
-  //      .BtsSkills__stage1,
-  //      .BtsSkills__stage2 {
-  //        height: 5rem;
-  //        background-color: black;
-  //      }
-  //    }
-  //  }
-  //}
-
-  // STYLE de la version lignes
-  .BtsTheme {
-    height: 700px;
+  .container {
+  }
+  .BtsSection__allItems {
     width: 100%;
-    padding-top: 5rem;
-    border: 1px solid white;
-    .heading {
-      font-size: 2rem;
-      tr {
-        border: 1px solid white;
+    display: flex;
+    align-items: center;
+    .tableaugauche {
+      border: 3px solid var(--gray-2);
+      width: 150px;
+      border-radius: 8px;
+      margin-right: 10px;
+
+      .titre {
+        border-bottom: 3px solid var(--gray-2);
+        h1 {
+          margin: 2rem 0;
+          text-align: center;
+          font-size: 1.5rem;
+        }
+      }
+      .contenant {
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        //border: 1px solid red;
+
+        .items {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          width: 20rem;
+          padding: 0 0.5rem;
+
+          .skill {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            height: 100%;
+            //border: 1px solid yellow;
+
+            //border: 1px solid red;
+            span {
+              margin: auto;
+              align-items: center;
+              width: 100%;
+              font-size: 1.5rem;
+              //border: 1px solid blue;
+            }
+
+            p {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+
+          .cours {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 15rem;
+            border-top: 3px solid var(--gray-2);
+            font-size: 1.5rem;
+          }
+
+          .stageun {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 15rem;
+            border-top: 3px solid var(--gray-2);
+            font-size: 1.5rem;
+          }
+
+          .stagedeux {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 15rem;
+            border-top: 3px solid var(--gray-2);
+            font-size: 1.5rem;
+          }
+        }
       }
     }
-    .BtsTheme__skills {
-      height: 100%;
+    .tableau {
+      display: flex;
       width: 100%;
-      text-align: center;
-      .btsSkill {
-        width: 100%;
-        height: 100%;
-        border: 1px solid blue;
+      border: 3px solid var(--gray-2);
+      border-radius: 8px;
 
-        .BtsSkills__skill {
-          transform: rotate(-90deg);
-          border: 1px solid black;
+      .colonne {
+        width: 16.6%;
+        border-left: 3px solid var(--gray-2);
+
+        .titre {
+          h1 {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            height: 55px;
+            font-size: 1rem;
+          }
         }
-        .BtsSkills__cours,
-        .BtsSkills__stage1,
-        .BtsSkills__stage2 {
-          height: 5rem;
-          background-color: black;
+
+        .contenant {
+          height: 600px;
+          width: 100%;
+          display: flex;
+          justify-content: space-evenly;
+          align-items: stretch;
+          //border: 1px solid red;
+
+          .items {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 0 0.5rem;
+            border-top: 3px solid var(--gray-2);
+
+            .skillList {
+              height: 100%;
+              text-align: center;
+              font-size: 1rem;
+              display: flex;
+              align-items: center;
+            }
+            .vert {
+              background-color: green;
+              border-bottom: 3px solid var(--gray-2);
+            }
+            .red {
+              background-color: red;
+              border-bottom: 3px solid var(--gray-2);
+            }
+            a {
+              height: 15rem;
+              background-color: black;
+            }
+          }
         }
       }
     }
   }
 `;
 
-export default function BtsSection() {
+export default function BtsSection({ lien = '' }) {
   return (
     <BtsSectionStyles>
-      <div className="BtsSection__allItems">
-        <Swiper
-          spaceBetween={15}
-          slidesPerView={1}
-          navigation
-          // breakpoints={{
-          //   // When windows width is >= 640px
-          //   100: {
-          //     slidesPerView: 1,
-          //   },
-          //   // When windows width is >= 768px
-          //   640: {
-          //     slidesPerView: 2,
-          //   },
-          //   // When windows width is >= 1200px
-          //   1200: {
-          //     slidesPerView: 3,
-          //   },
-          // }}
-        >
-          {skills.map((theme) => (
-            <SwiperSlide key={theme.id}>
-              {/* Version Ligne */}
-              {/* <table className="BtsTheme"> */}
-              {/*  <thead className="heading"> */}
-              {/*    <tr> */}
-              {/*      <th>{theme.title}</th> */}
-              {/*    </tr> */}
-              {/*  </thead> */}
-              {/*  <tbody className="BtsTheme__skills"> */}
-              {/*    <tr className="BtsSkills__skill"> */}
-              {/*      {theme.items.map((skill) => ( */}
-              {/*        <td> */}
-              {/*          <p>{skill.title}</p> */}
-              {/*        </td> */}
-              {/*      ))} */}
-              {/*    </tr> */}
-              {/*    <tr> */}
-              {/*      {theme.items.map(() => ( */}
-              {/*        <td className="test"> */}
-              {/*          <div className="BtsSkills__cours" /> */}
-              {/*        </td> */}
-              {/*      ))} */}
-              {/*    </tr> */}
-              {/*    <tr> */}
-              {/*      <td> */}
-              {/*        <div className="BtsSkills__stage1" /> */}
-              {/*      </td> */}
-              {/*    </tr> */}
-              {/*    <tr> */}
-              {/*      {theme.items.map(() => ( */}
-              {/*        <td> */}
-              {/*          <div className="BtsSkills__stage2" /> */}
-              {/*        </td> */}
-              {/*      ))} */}
-              {/*    </tr> */}
-              {/*  </tbody> */}
-              {/* </table> */}
-              {/* Version Principale */}
-              <table className="BtsTheme">
-                <thead className="heading">
-                  <tr>
-                    <th>{theme.title}</th>
-                  </tr>
-                </thead>
-                <tbody className="BtsTheme__skills">
-                  {theme.items.map((skill) => (
-                    <td>
-                      <table className="btsSkill">
-                        <tr className="BtsSkills__skill">
-                          <td>
-                            <p>{skill.title}</p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td className="test">
-                            <div className="BtsSkills__cours" />
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <div className="BtsSkills__stage1" />
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <div className="BtsSkills__stage2" />
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  ))}
-                </tbody>
-              </table>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+      <div className="container">
+        <div className="BtsSection__allItems">
+          <div className="tableaugauche">
+            <div className="titre">
+              <h1>Compétence</h1>
+            </div>
+            <div className="contenant">
+              <div className="items">
+                <div className="skill">
+                  <span>Réalisation professionnelle</span>
+                </div>
+                <div className="cours">
+                  <span>En cours</span>
+                </div>
+                <div className="stageun">
+                  <span>1er stage</span>
+                </div>
+                <div className="stagedeux">
+                  <span>2e stage</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="tableau">
+            <div className="colonne">
+              <div className="titre">
+                <h1>Gérer le patrimoine informatique</h1>
+              </div>
+              <div className="contenant">
+                <div className="items">
+                  <p className="skillList">
+                    • Recenser et identifier les ressources numériques <br />
+                    • Exploiter des référentiels, normes et standards adoptés
+                    par le prestataire informatique <br />
+                    • Mettre en place et vérifier les niveaux d’habilitation
+                    associés à un service
+                    <br />
+                    • Vérifier les conditions de la continuité d’un service
+                    informatique <br />• Gérer des sauvegardes Vérifier le
+                    respect des règles d’utilisation des ressources numériques
+                  </p>
+                  <a className="vert" href="projects/projetreseau">
+                    <div className="cours" />
+                  </a>
+                  <a className="vert" href="stage">
+                    <div className="stageun" />
+                  </a>
+                  <a className="vert" href="stage">
+                    <div className="stagedeux" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="colonne">
+              <div className="titre">
+                <h1>
+                  Répondre aux incidents et aux demandes d’assistance et
+                  d’évolution
+                </h1>
+              </div>
+              <div className="contenant">
+                <div className="items">
+                  <p className="skillList">
+                    • Collecter, suivre et orienter des demandes <br />
+                    • Traiter des demandes concernant les applications <br />
+                    • Traiter des demandes concernant les services réseau et
+                    système, applicatifs
+                    <br />
+                  </p>
+                  <a className="vert" href="projects/apieasysav">
+                    <div className="cours" />
+                  </a>
+                  <a className="vert" href="stage">
+                    <div className="stageun" />
+                  </a>
+                  <a className="vert" href="stage">
+                    <div className="stagedeux" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="colonne">
+              <div className="titre">
+                <h1>Développer la présence en ligne de l’organisation</h1>
+              </div>
+              <div className="contenant">
+                <div className="items">
+                  <p className="skillList">
+                    • Participer à la valorisation de l’image de l’organisation
+                    sur les médias numériques en tenant compte du cadre
+                    juridique et des enjeux économiques <br />
+                    • Référencer les services en ligne de l’organisation et
+                    mesurer leur visibilité. <br />
+                    • Participer à l’évolution d’un site Web exploitant les
+                    données de l’organisation.
+                    <br />
+                  </p>
+                  <a className="vert" href="projects/camping">
+                    <div className="cours" />
+                  </a>
+                  <a className="vert" href="stage">
+                    <div className="stageun" />
+                  </a>
+                  <a className="vert" href="stage">
+                    <div className="stagedeux" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="colonne">
+              <div className="titre">
+                <h1>Travailler en mode projet</h1>
+              </div>
+              <div className="contenant">
+                <div className="items">
+                  <p className="skillList">
+                    • Analyser les objectifs et les modalités d’organisation
+                    d’un projet <br />
+                    • Planifier les activités <br />
+                    • Évaluer les indicateurs de suivi d’un projet et analyser
+                    les écarts
+                    <br />
+                  </p>
+                  <a className="vert" href="test">
+                    <div className="cours" />
+                  </a>
+                  <a className="vert" href="stage">
+                    <div className="stageun" />
+                  </a>
+                  <a className="vert" href="stage">
+                    <div className="stagedeux" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="colonne">
+              <div className="titre">
+                <h1>
+                  Mettre à disposition des utilisateurs un service informatique
+                </h1>
+              </div>
+              <div className="contenant">
+                <div className="items">
+                  <p className="skillList">
+                    • Réaliser les tests d’intégration et d’acceptation d’un
+                    service <br />
+                    • Déployer un service <br />
+                    • Accompagner les utilisateurs dans la mise en place d’un
+                    service
+                    <br />
+                  </p>
+                  <a className="vert" href="projects/hopital"
+                  >
+                    <div className="cours" />
+                  </a>
+                  <a className="vert" href="stage">
+                    <div className="stageun" />
+                  </a>
+                  <a className="vert" href="stage">
+                    <div className="stagedeux" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="colonne">
+              <div className="titre">
+                <h1>Organiser son développement professionnel</h1>
+              </div>
+              <div className="contenant">
+                <div className="items">
+                  <p className="skillList">
+                    • Mettre en place son environnement d’apprentissage
+                    personnel
+                    <br />
+                    • Mettre en œuvre des outils et stratégies de veille
+                    informationnelle <br />
+                    • Gérer son identité professionnelle
+                    <br />• Développer son projet professionnel
+                  </p>
+                  <a className="vert" href="http://localhost:3001">
+                    <div className="cours" />
+                  </a>
+                  <a className="vert" href="stage">
+                    <div className="stageun" />
+                  </a>
+                  <a className="vert" href="stage">
+                    <div className="stagedeux" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </BtsSectionStyles>
   );

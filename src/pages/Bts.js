@@ -11,7 +11,7 @@ export default function Bts() {
   return (
     <BtsStyles>
       <div className="container">
-        <SectionTitle heading="BTS grid" subheading="Here is the" />
+        <SectionTitle heading="Grille BTS" subheading="" />
         <BtsSection />
       </div>
     </BtsStyles>

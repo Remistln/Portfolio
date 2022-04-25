@@ -59,7 +59,7 @@ export default function ProjectSection() {
   return (
     <ProjectSectionStyle>
       <div className="container">
-        <SectionTitle heading="Projects" subheading="Some of my recent works" />
+        <SectionTitle heading="Projets" subheading="Certains de mes" />
         <div className="projects__all__itemps">
           <Swiper
             spaceBetween={30}
@@ -89,7 +89,9 @@ export default function ProjectSection() {
                     img={project.img}
                     desc={project.desc}
                     objectfit={project.contain}
+                    type={project.type}
                     techno={project.techno}
+                    link={project.link}
                   />
                 </SwiperSlide>
               );

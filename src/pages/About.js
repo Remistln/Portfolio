@@ -2,9 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 import PText from '../components/PText';
 import Button from '../components/Button';
-import AboutImg from '../assets/images/about-page-img.png';
+import AboutImg from '../assets/images/remi2.jpeg';
 import AboutInfoItem from '../components/AboutInfoItem';
 import ContactBanner from '../components/ContactBanner';
+import DlButton from '../components/DLButton';
+import CV from '../assets/download/Staelen Rémi.pdf';
+import Boutton from '../components/Bouton';
 
 const AboutPageStyle = styled.div`
   padding: 20rem 0 10rem 0;
@@ -51,6 +54,7 @@ const AboutPageStyle = styled.div`
     margin-bottom: 10rem;
   }
   .about__info__heading {
+    padding-bottom: 2rem;
     font-size: 3.6rem;
     text-transform: uppercase;
   }
@@ -72,30 +76,35 @@ const AboutPageStyle = styled.div`
   }
 `;
 
-export default function Home() {
+export default function About() {
   return (
     <AboutPageStyle>
       <div className="container">
         <div className="top-section">
           <div className="left">
             <p className="about__subheading">
-              Hi, I am <span>Remi Staelen</span>
+              Bonjour, je suis <span>Remi Staelen</span>
             </p>
-            <h2 className="about__heading">A freelance Developer</h2>
+            <h2 className="about__heading">Un étudiant en programmation</h2>
             <div className="about__info">
               <PText>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                J'ai 19 ans et je suis en 2ème année à l'EPSI, une école privée
+                d'informatique située à Lille.
                 <br />
                 <br />
-                Dignissimos expedita incidunt natus necessitatibus quas rem
-                suscipit vitae?
+                J'ai découvert l'informatique il y a 4 ans et je n'ai jamais
+                cessé de de coder depuis. J'aime apprendre de nouveaux langages
+                pour élargir mon champ de vision. Cependant, je tends a me
+                spécialiser en python afin de pouvoir entrer dans le domaine de
+                la datascience.
                 <br />
                 <br />
-                Consequuntur, doloribus eaque impedit nemo ut vel! Expedita ipsa
-                labore nobis temporibus ut!
+                Je veux créer autant d'outils utiles que possible, et rencontrer
+                des personnes que je n'aurais pas pu rencontrer ailleurs que
+                dans l'informatique.
               </PText>
             </div>
-            <Button btnText="Download CV" btnLink="#" />
+            <Boutton btnText="Télécharger CV" btnLink={CV} />
           </div>
           <div className="right">
             <img src={AboutImg} alt="Remi img" />
@@ -104,16 +113,45 @@ export default function Home() {
         <div className="about__info__items">
           <div className="about__info__item">
             <h1 className="about__info__heading">Education</h1>
-            <AboutInfoItem title="School" items={['Epsi Lille']} />
             <AboutInfoItem
-              title="Lycee"
-              items={['Gustave Eiffel Armentieres']}
+              title="Etablissement actuel"
+              items={['EPSI (Seconde année avec option BTS SIO)', 'Lille']}
+            />
+            <AboutInfoItem
+              title="BAC S"
+              items={[
+                "Section européenne et option Sciences de l'ingénieur",
+                'Gustave Eiffel',
+                'Armentieres',
+              ]}
             />
           </div>
           <div className="about__info__item">
-            <h1 className="about__info__heading">Skills</h1>
-            <AboutInfoItem title="Front" items={['HTML, CSS, JS']} />
-            <AboutInfoItem title="Back" items={['PHP, SQL']} />
+            <h1 className="about__info__heading">Compétences</h1>
+            <AboutInfoItem title="Front" items={['HTML', 'CSS', 'JS']} />
+            <AboutInfoItem title="Back" items={['PHP', 'SQL']} />
+            <AboutInfoItem
+              title="Frameworks"
+              items={['SYMFONY', 'REACT-JS', 'REACT-NATIVE']}
+            />
+            <AboutInfoItem title="Data" items={['PYTHON']} />
+          </div>
+          <div className="about__info__item">
+            <h1 className="about__info__heading">
+              Expériences professionelles
+            </h1>
+            <AboutInfoItem
+              title="Stage en Backend"
+              items={['ALLYOUNEED', 'Mai - Juin 2021']}
+            />
+            <AboutInfoItem
+              title="Employé administratif"
+              items={['Damart', 'été 2020-2021']}
+            />
+            <AboutInfoItem
+              title="Conseil municipal des jeunes"
+              items={['Comines', '2011 - 2013']}
+            />
           </div>
         </div>
       </div>

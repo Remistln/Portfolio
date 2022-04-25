@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import PText from './PText';
-import MapImg from '../assets/images/map.png';
+// import MapImg from '../assets/images/map.png';
+import MapImg from '../assets/images/location.png';
 
 const MapStyles = styled.div`
   background: url(${MapImg}) no-repeat center / cover;
@@ -46,7 +47,7 @@ export default function Map() {
     <MapStyles>
       <div className="container">
         <div className="map__card">
-          <h3 className="map__card__heading">Here is me</h3>
+          <h3 className="map__card__heading">Je suis ici</h3>
           <PText>Linselles, Nord, France</PText>
           <a
             href="https://www.google.com/maps/place/59126+Linselles/@50.7367069,3.0373721,13z/data=!3m1!4b1!4m5!3m4!1s0x47c32c65c22d8e0d:0x40af13e81646340!8m2!3d50.739197!4d3.080101"
