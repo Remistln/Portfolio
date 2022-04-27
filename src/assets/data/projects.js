@@ -47,7 +47,7 @@ const projects = [
     id: uuidv4(),
     name: 'Bataille navale',
     desc:
-      'Jeu de bataille navale utilisant le terminal jouable a 2 ou contre une IA',
+      'Jeu de bataille navale utilisant le terminal jouable à 2 ou contre une IA',
     img: Battleship,
     type: 'Projet EPSI',
     techno: 'Python',
@@ -65,7 +65,7 @@ const projects = [
   {
     id: uuidv4(),
     name: 'Echecs',
-    desc: "Jeu d'échecs utilisant le terminal a 2 joueurs ou contre une IA",
+    desc: "Jeu d'échecs utilisant le terminal à 2 joueurs ou contre une IA",
     img: Chess,
     type: 'Projet EPSI',
     techno: 'Python',
