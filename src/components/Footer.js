@@ -70,7 +70,7 @@ export default function Footer() {
             heading="Liens"
             links={[
               {
-                title: 'Acceuil',
+                title: 'Accueil',
                 path: '/',
                 type: 'Link',
               },
