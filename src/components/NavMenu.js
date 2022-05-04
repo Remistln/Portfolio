@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import {Link, NavLink} from 'react-router-dom';
 import styled from 'styled-components';
 import { MdClose, MdMenu } from 'react-icons/all';
 import HeroSection from './HeroSection';
+import stage2022 from "../assets/images/Rapport de stage 2022.pdf";
+import Boutton from "./Bouton";
 
 const NavMenuStyle = styled.div`
   position: fixed;
@@ -178,6 +180,13 @@ export default function NavMenu() {
               tabIndex={0}
             >
               Certifications
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+                to={{pathname:"https://tourmaline-taffy-f2de7c.netlify.app"}} target="_blank"
+            >
+              Veille Technologique
             </NavLink>
           </li>
           <li>

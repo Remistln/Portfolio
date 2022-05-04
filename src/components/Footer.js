@@ -89,11 +89,21 @@ export default function Footer() {
                 path: '/bts',
                 type: 'Link',
               },
+                {
+                    title: 'Stages',
+                    path: '/stage',
+                    type: 'Link',
+                },
               {
                 title: 'Certifications',
                 path: '/certifications',
                 type: 'Link',
               },
+                {
+                    title: 'Veille Technologique',
+                    path:"https://tourmaline-taffy-f2de7c.netlify.app",
+                    type: 'Link',
+                },
               {
                 title: 'Contact',
                 path: '/contact',
