@@ -224,7 +224,7 @@ export default function BtsSection({ lien = '' }) {
                     système, applicatifs
                     <br />
                   </p>
-                  <a className="vert" href="projects/apieasysav">
+                  <a className="vert" href="projects/infrastructure">
                     <div className="cours" />
                   </a>
                   <a className="vert" href="stage">
@@ -280,7 +280,7 @@ export default function BtsSection({ lien = '' }) {
                     les écarts
                     <br />
                   </p>
-                  <a className="vert" href="test">
+                  <a className="vert" href="projects/hopital">
                     <div className="cours" />
                   </a>
                   <a className="vert" href="stage">
@@ -309,7 +309,7 @@ export default function BtsSection({ lien = '' }) {
                     service
                     <br />
                   </p>
-                  <a className="vert" href="projects/hopital"
+                  <a className="vert" href="projects/apieasysav"
                   >
                     <div className="cours" />
                   </a>
@@ -338,7 +338,7 @@ export default function BtsSection({ lien = '' }) {
                     • Gérer son identité professionnelle
                     <br />• Développer son projet professionnel
                   </p>
-                  <a className="vert" href="http://localhost:3001">
+                  <a className="vert" href="projects/apieasysav">
                     <div className="cours" />
                   </a>
                   <a className="vert" href="stage">

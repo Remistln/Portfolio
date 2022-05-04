@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import PText from '../components/PText';
 import SectionTitle from '../components/SectionTitle';
+import projects from "../assets/data/projects";
+import AboutInfoItem from "../components/AboutInfoItem";
 
 const ProjectStyle = styled.div`
   padding: 10rem 0;
@@ -37,6 +38,7 @@ export default function Project({
   textdeux = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse illo libero saepe veritatis. Accusantium aperiam at dolorem facere minima perspiciatis quas repellendus similique ullam veritatis? Impedit nam nemo optio reiciendis?',
   photo3 = 'none',
   texttrois = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse illo libero saepe veritatis. Accusantium aperiam at dolorem facere minima perspiciatis quas repellendus similique ullam veritatis? Impedit nam nemo optio reiciendis?',
+  competences = ['coucou', "non"]
 }) {
   return (
     <ProjectStyle>
@@ -54,9 +56,12 @@ export default function Project({
           <img src={photo3} alt="" />
           <p>{texttrois}</p>
         </div>
-        {/* <div className="competences"> */}
-        {/*  <h1>Compétences utilisées :</h1> */}
-        {/* </div> */}
+         <div className="competences">
+           <AboutInfoItem
+               title="Compétences utilisées :"
+               items={competences}
+           />
+         </div>
       </div>
     </ProjectStyle>
   );

@@ -33,6 +33,7 @@ export default function App() {
                   textdeux={project.textdeux}
                   photo3={project.imgtrois}
                   texttrois={project.texttrois}
+                  competences={project.competences}
                 />
               </Route>
             ))}
