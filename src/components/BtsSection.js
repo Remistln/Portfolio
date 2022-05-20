@@ -195,10 +195,10 @@ export default function BtsSection({ lien = '' }) {
                     informatique <br />• Gérer des sauvegardes Vérifier le
                     respect des règles d’utilisation des ressources numériques
                   </p>
-                  <a className="vert" href="projects/projetreseau">
+                  <a className="vert" href="/skill/1">
                     <div className="cours" />
                   </a>
-                  <a className="vert" href="stage">
+                  <a className="vert" href="/skill/stage1/1">
                     <div className="stageun" />
                   </a>
                   <a className="vert" href="stage">
@@ -224,13 +224,13 @@ export default function BtsSection({ lien = '' }) {
                     système, applicatifs
                     <br />
                   </p>
-                  <a className="vert" href="projects/infrastructure">
+                  <a className="vert" href="/skill/2">
                     <div className="cours" />
                   </a>
-                  <a className="vert" href="stage">
+                  <a className="red">
                     <div className="stageun" />
                   </a>
-                  <a className="vert" href="stage">
+                  <a className="red">
                     <div className="stagedeux" />
                   </a>
                 </div>
@@ -253,10 +253,10 @@ export default function BtsSection({ lien = '' }) {
                     données de l’organisation.
                     <br />
                   </p>
-                  <a className="vert" href="projects/camping">
+                  <a className="vert" href="/skill/3">
                     <div className="cours" />
                   </a>
-                  <a className="vert" href="stage">
+                  <a className="vert" href="/skill/stage1/3">
                     <div className="stageun" />
                   </a>
                   <a className="vert" href="stage">
@@ -280,10 +280,10 @@ export default function BtsSection({ lien = '' }) {
                     les écarts
                     <br />
                   </p>
-                  <a className="vert" href="projects/hopital">
+                  <a className="vert" href="/skill/4">
                     <div className="cours" />
                   </a>
-                  <a className="vert" href="stage">
+                  <a className="vert" href="/skill/stage1/4">
                     <div className="stageun" />
                   </a>
                   <a className="vert" href="stage">
@@ -309,11 +309,11 @@ export default function BtsSection({ lien = '' }) {
                     service
                     <br />
                   </p>
-                  <a className="vert" href="projects/apieasysav"
+                  <a className="vert" href="/skill/5"
                   >
                     <div className="cours" />
                   </a>
-                  <a className="vert" href="stage">
+                  <a className="vert" href="/skill/stage1/5">
                     <div className="stageun" />
                   </a>
                   <a className="vert" href="stage">
@@ -338,7 +338,7 @@ export default function BtsSection({ lien = '' }) {
                     • Gérer son identité professionnelle
                     <br />• Développer son projet professionnel
                   </p>
-                  <a className="vert" href="projects/apieasysav">
+                  <a className="vert" href="/skill/6">
                     <div className="cours" />
                   </a>
                   <a className="vert" href="stage">

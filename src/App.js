@@ -12,11 +12,16 @@ import projects from './assets/data/projects';
 import Project from './pages/Project';
 import Stage from './pages/Stage';
 import Certifications from './pages/Certifications';
+import skills from "./assets/data/skills";
+import Skill from "./pages/Skill";
+import SimpleReactLightbox from 'simple-react-lightbox'
 
 export default function App() {
   return (
     <>
+
       <Router>
+        <SimpleReactLightbox>
         <NavMenu />
         <SmoothScrollbar>
           <Switch>
@@ -52,12 +57,20 @@ export default function App() {
             <Route path="/contact">
               <Contact />
             </Route>
+            {skills.map((item) => (
+                <Route path={item.link}>
+                  <Skill
+                      skill = {item}
+                  />
+                </Route>
+            ))}
             <Route path="/">
               <Home />
             </Route>
           </Switch>
           <Footer />
         </SmoothScrollbar>
+        </SimpleReactLightbox>
       </Router>
     </>
   );
