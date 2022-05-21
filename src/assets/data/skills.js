@@ -45,6 +45,10 @@ import stage1Trello from '../images/stage1_trello.png'
 // Mettre a dispo
 import stage1Docu from '../images/stage1_docu.png'
 
+// Projet pro
+import stage1PhpStorm from '../images/stage1_phpstorm.png'
+import stage1Maxime from '../images/stage1_maxime.png'
+
 const skills = [
   {
     id: 1,
@@ -312,34 +316,20 @@ const skills = [
       {
         id: uuidv4(),
         title: 'Mettre en place son environnement d’apprentissage personnel',
-        texte : "Lors de plusieurs projets, notemment le projet API SAV et les projets de bataille navele et d'echecs" +
-            ", qui devait être fait en python, j'ai du mettre en place mon environnement et des outils afin de pouvoir " +
-            "etre plus facilement productif. C'est le cas de Pycharm, un IDE permettant d'etre plus productif avec python.",
-        img : pycharm
-
-      },
-      {
-        id: uuidv4(),
-        title:
-            'Mettre en œuvre des outils et stratégies de veille informationnelle',
-        texte : "En étant à l'EPSI, nous avons du développer un outil de veille informationnelle. J'ai développé cet" +
-            "outil en javascript, et en utilisant une API de news pour récupérer les derniers articles d'un site web." +
-            "De ce fait, sur cet outil, je peux rechercher des articles avec des mot clés, je peux rechercher des " +
-            "articles par thème, et les sauvegarder pour les lire plus tard.",
-        img : veilleTechno
-
+        texte : "Lors de ce stage, j'ai eu l'occasion d'approfondir des technologies que je conaissait. Cependant, " +
+            "j'ai également pu travailler sur des nouveaux outils comme PHPStorm, un IDE pour coder en php.",
+        img : stage1PhpStorm
 
       },
       {
         id: uuidv4(),
         title: 'Gérer son identité professionnelle',
-        texte : "Pour l'épreuve E5 du BTS, j'ai du créer un portfolio et ressencer diverses compétences. Cependant, " +
-            "j'utiliserai ce portfolio dans un but professionnel, afin de pouvoir, lors d'entretiens, présenter divers" +
-            "projets effectués.",
-        img : portfolio
+        texte : "Ce stage m'a permis d'avoir un aperçu du monde professionnel, et il m'a également permis d'aggrandir " +
+            "mon réseau professionnel",
+        img : stage1Maxime
+
       },
     ],
   },
 ];
-
 export default skills;
