@@ -201,7 +201,7 @@ export default function BtsSection({ lien = '' }) {
                   <a className="vert" href="/skill/stage1/1">
                     <div className="stageun" />
                   </a>
-                  <a className="vert" href="stage">
+                  <a className="vert" href="/skill/stage2/1">
                     <div className="stagedeux" />
                   </a>
                 </div>
@@ -259,7 +259,7 @@ export default function BtsSection({ lien = '' }) {
                   <a className="vert" href="/skill/stage1/3">
                     <div className="stageun" />
                   </a>
-                  <a className="vert" href="stage">
+                  <a className="vert" href="/skill/stage2/3">
                     <div className="stagedeux" />
                   </a>
                 </div>
@@ -286,7 +286,7 @@ export default function BtsSection({ lien = '' }) {
                   <a className="vert" href="/skill/stage1/4">
                     <div className="stageun" />
                   </a>
-                  <a className="vert" href="stage">
+                  <a className="vert" href="/skill/stage2/4">
                     <div className="stagedeux" />
                   </a>
                 </div>
@@ -316,7 +316,7 @@ export default function BtsSection({ lien = '' }) {
                   <a className="vert" href="/skill/stage1/5">
                     <div className="stageun" />
                   </a>
-                  <a className="vert" href="stage">
+                  <a className="vert" href="/skill/stage2/5">
                     <div className="stagedeux" />
                   </a>
                 </div>
@@ -341,10 +341,10 @@ export default function BtsSection({ lien = '' }) {
                   <a className="vert" href="/skill/6">
                     <div className="cours" />
                   </a>
-                  <a className="vert" href="stage">
+                  <a className="vert" href="/skill/stage1/6">
                     <div className="stageun" />
                   </a>
-                  <a className="vert" href="stage">
+                  <a className="vert" href="/skill/stage2/6">
                     <div className="stagedeux" />
                   </a>
                 </div>
